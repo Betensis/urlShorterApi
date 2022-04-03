@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "psql_db"
+      POSTGRES_USER: "psql"
+      POSTGRES_PASSWORD: "psql"
+    command:
+      - "postgres"
+    ports:
+      - "5432:5432"
